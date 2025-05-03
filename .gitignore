@@ -1,0 +1,5 @@
+shelf/
+out/
+workspace.xml
+
+*.class
