@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Created-By: Apache Ant 1.5.1
+Implementation-Vendor: Smardec Inc.
+Implementation-Title: Allatori Java Obfuscator
+Implementation-Version: 9.3
+Implementation-URL: http://www.allatori.com
+Main-Class: com.allatori.Obfuscate
+Bundle-ManifestVersion: 2
+Bundle-Name: Allatori Builder
+Bundle-SymbolicName: com.allatori.eclipse;singleton:=true
+Bundle-Version: 9.3
+Bundle-Vendor: Smardec Inc.
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.eclipse.core.resources,org.eclipse.core.runtime,or
+ g.eclipse.core.commands,org.eclipse.jface,org.eclipse.ui,org.eclipse.
+ core.expressions,org.eclipse.jdt.core
+
