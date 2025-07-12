@@ -103,9 +103,9 @@ public class Class446 {
             }
          } catch (RuntimeException var23) {// 46
             if (var23.getClass().getName().endsWith("InaccessibleObjectException")) {// 170
-               Class528.method1558(
+               Logger.warning(
                   "Use '--add-opens java.base/java.util.zip=ALL-UNNAMED' Java launcher option to keep output jar duplicate entries https://allatori.com/doc.html#property-output-jar-duplicate-name-entries"// 553
-               );
+                             );
             }
          } catch (Exception var24) {// 190
          }
@@ -425,12 +425,12 @@ public class Class446 {
       File var4 = new File(var1);// 64
       File var3;
       if ((var3 = new File(var2)).exists() && !var3.delete()) {// 249 469
-         Class528.method1558("Cannot delete '" + var3.getPath() + "'");// 349
+         Logger.warning("Cannot delete '" + var3.getPath() + "'");// 349
       }
 
       if (!var4.renameTo(var3)) {// 196
-         Class528.method1558("Cannot rename '" + var4.getPath() + "' to '" + var3.getPath() + "'");// 164
-         Class528.method1558("Resulting file is '" + var4.getPath() + "'");// 554
+         Logger.warning("Cannot rename '" + var4.getPath() + "' to '" + var3.getPath() + "'");// 164
+         Logger.warning("Resulting file is '" + var4.getPath() + "'");// 554
       }
    }// 89
 

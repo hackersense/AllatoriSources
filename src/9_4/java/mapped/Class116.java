@@ -6,7 +6,7 @@ import smardecSB.ldc2_w;
 import smardecSB.sipush;
 
 // $VF: Compiled from uk
-public final class Class116 implements Class117, Class111, Class119 {
+public final class Class116 implements Class117, Class111, Opcodes {
    // $VF: synthetic field
    public Class10 field20;
 

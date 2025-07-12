@@ -20,16 +20,16 @@ public class Class345 extends Class342 {
       } catch (ClassNotFoundException var6) {// 316
          if (!Class446.method920(this.field1005).contains(var6.getMessage())) {// 207
             Class446.method920(this.field1005).add(var6.getMessage());// 275
-            Class528.method1559("CLASS NOT FOUND: " + var6.getMessage());
-            Class528.method1559("  ADD NEEDED JAR TO THE 'classpath' ELEMENT OF THE CONFIGURATION FILE.");// 355
+            Logger.error("CLASS NOT FOUND: " + var6.getMessage());
+            Logger.error("  ADD NEEDED JAR TO THE 'classpath' ELEMENT OF THE CONFIGURATION FILE.");// 355
          }
 
          return "java/lang/Object";// 369
       } catch (NoClassDefFoundError var7) {// 215
          if (!Class446.method920(this.field1005).contains(var7.getMessage())) {// 511
             Class446.method920(this.field1005).add(var7.getMessage());// 382
-            Class528.method1559("CLASS NOT FOUND: " + var7.getMessage());
-            Class528.method1559("  ADD NEEDED JAR TO THE 'classpath' ELEMENT OF THE CONFIGURATION FILE.");// 576
+            Logger.error("CLASS NOT FOUND: " + var7.getMessage());
+            Logger.error("  ADD NEEDED JAR TO THE 'classpath' ELEMENT OF THE CONFIGURATION FILE.");// 576
          }
 
          return "java/lang/Object";// 548
@@ -38,8 +38,8 @@ public class Class345 extends Class342 {
       } catch (UnsupportedClassVersionError var9) {// 523
          if (!Class446.method923(this.field1005)) {// 162
             Class446.method925(this.field1005, true);// 282
-            Class528.method1559("SOME CLASS(ES) CANNOT BE READ DUE TO JVM VERSION INCOMPATIBILITY: " + var9.toString());
-            Class528.method1559("  USE NEWER JVM VERSION TO RUN ALLATORI.");// 549
+            Logger.error("SOME CLASS(ES) CANNOT BE READ DUE TO JVM VERSION INCOMPATIBILITY: " + var9.toString());
+            Logger.error("  USE NEWER JVM VERSION TO RUN ALLATORI.");// 549
          }
 
          return "java/lang/Object";// 76

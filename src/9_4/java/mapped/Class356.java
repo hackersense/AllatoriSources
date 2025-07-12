@@ -349,7 +349,7 @@ public class Class356 {
             } catch (ClassNotFoundException var6) {// 556
                return true;// 316
             } catch (SecurityException var7) {// 207
-               Class528.method1559("Cannot read class: " + var1);// 275
+               Logger.error("Cannot read class: " + var1);// 275
                throw var7;// 127
             }
          }

@@ -187,7 +187,7 @@ public class Class559 {
    public static void method1781() {
       String var0;
       if ((var0 = Class580.method1938().method722()) == null) {// 507 557
-         Class528.method1558("Log file is not set.");// 34
+         Logger.warning("Log file is not set.");// 34
          field1965.delete(0, field1965.length());// 332
       } else {
          PrintWriter var1 = null;// 143
@@ -204,9 +204,9 @@ public class Class559 {
                      var18.flush();// 484
                      break label93;
                   } catch (FileNotFoundException var15) {// 409
-                     Class528.method1559("Cannot write log to '" + var0 + "' file.");// 389
+                     Logger.error("Cannot write log to '" + var0 + "' file.");// 389
                   } catch (Exception var16) {// 18
-                     Class528.method1559("Writing log file failed with exception: " + var16.getMessage());// 513
+                     Logger.error("Writing log file failed with exception: " + var16.getMessage());// 513
                      break label94;
                   }
                } catch (Throwable var17) {

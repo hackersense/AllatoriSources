@@ -56,7 +56,7 @@ public class Class439 extends URLClassLoader {
                try {
                   var3 = var2.defineClass(var1, var17, 0, var17.length);// 553
                } catch (IncompatibleClassChangeError var12) {// 58
-                  Class528.method1559("IncompatibleClassChangeError for class " + var1);// 190
+                  Logger.error("IncompatibleClassChangeError for class " + var1);// 190
                   throw var12;// 315
                }
             } finally {

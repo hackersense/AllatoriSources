@@ -23,19 +23,19 @@ public class Class467 {
                   .invoke(null, var4, var2, var3)// 1
             )
             == null) {
-            Class528.method1559("Custom string encryption error: null value is returned by " + var9[0] + "." + var9[1] + "()");// 170
+            Logger.error("Custom string encryption error: null value is returned by " + var9[0] + "." + var9[1] + "()");// 170
             throw new NullPointerException();// 553
          } else {
             return var10;// 190
          }
       } catch (ClassNotFoundException var6) {// 315
-         Class528.method1559("Cannot load custom string encryption class (class not found): " + var9[0]);// 465
+         Logger.error("Cannot load custom string encryption class (class not found): " + var9[0]);// 465
          return var4;
       } catch (NoSuchMethodException var7) {// 132
-         Class528.method1559("Cannot find custom string encryption method: " + var9[0] + "." + var9[1] + "()");// 184
+         Logger.error("Cannot find custom string encryption method: " + var9[0] + "." + var9[1] + "()");// 184
          return var4;// 495
       } catch (Exception var8) {// 534
-         Class528.method1559("Custom string encryption error: " + var8.getMessage());// 488
+         Logger.error("Custom string encryption error: " + var8.getMessage());// 488
          return var4;// 159
       }
    }
@@ -51,12 +51,12 @@ public class Class467 {
          try {
             Method var4;
             if (!Modifier.isStatic((var4 = var11.getDeclaredMethod(var10[1], String.class)).getModifiers()) || !Modifier.isPublic(var4.getModifiers())) {// 260 332
-               Class528.method1559("Custom string encryption method is not static and public: " + var10[0] + "." + var10[1] + "()");// 30
+               Logger.error("Custom string encryption method is not static and public: " + var10[0] + "." + var10[1] + "()");// 30
             }
 
             String var12;
             if ((var12 = (String)var4.invoke(null, var3)) == null) {// 143 252
-               Class528.method1559("Custom string encryption error: null value is returned by " + var10[0] + "." + var10[1] + "()");// 20
+               Logger.error("Custom string encryption error: null value is returned by " + var10[0] + "." + var10[1] + "()");// 20
                throw new NullPointerException();// 204
             } else {
                return var12;// 310
@@ -65,19 +65,19 @@ public class Class467 {
             Method var5;
             if (!Modifier.isStatic((var5 = var11.getDeclaredMethod(var10[1], String.class, String.class, String.class)).getModifiers())// 409 484
                || !Modifier.isPublic(var5.getModifiers())) {
-               Class528.method1559("Custom string encryption method is not static and public: " + var10[0] + "." + var10[1] + "()");// 389
+               Logger.error("Custom string encryption method is not static and public: " + var10[0] + "." + var10[1] + "()");// 389
             }
 
             return field1527 + '[' + var1 + ']' + var3;// 18
          }
       } catch (ClassNotFoundException var7) {// 93
-         Class528.method1559("Cannot load custom string encryption class (class not found): " + var10[0]);// 151
+         Logger.error("Cannot load custom string encryption class (class not found): " + var10[0]);// 151
          return var0;
       } catch (NoSuchMethodException var8) {// 530
-         Class528.method1559("Cannot find custom string encryption method: " + var10[0] + "." + var10[1] + "()");// 491
+         Logger.error("Cannot find custom string encryption method: " + var10[0] + "." + var10[1] + "()");// 491
          return var0;// 338
       } catch (Exception var9) {// 147
-         Class528.method1559("Custom string encryption error: " + var9.getMessage());// 295
+         Logger.error("Custom string encryption error: " + var9.getMessage());// 295
          return var0;// 273
       }
    }

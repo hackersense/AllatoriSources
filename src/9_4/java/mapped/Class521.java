@@ -20,7 +20,7 @@ public class Class521 {
                var1.method562(method1478(var4.getInputStream(var6), var6.getName()), var2, var6.getName());// 557
             } catch (Exception var5) {
                if (!var6.getName().endsWith("module-info.class")) {// 332
-                  Class528.method1559("Cannot parse class " + var6.getName());// 260
+                  Logger.error("Cannot parse class " + var6.getName());// 260
                }
             }
          }

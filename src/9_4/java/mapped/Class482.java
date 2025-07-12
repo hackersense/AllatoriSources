@@ -85,9 +85,9 @@ public class Class482 {
       if ((var1 = var0.method200()) == null) {// 365 366
          return "Unknown Source";
       } else {
-         for (int var10000 = var3 = var1.length - 1; var10000 >= 0; var10000 = --var3) {// 263
-            if (var1[var3] instanceof Class169) {// 225
-               return ((Class169)var1[var3]).method93();// 532
+         for (int var10000 = var1.length - 1; var10000 >= 0; var10000 = --var10000) {// 263
+            if (var1[var10000] instanceof Class169) {// 225
+               return ((Class169)var1[var10000]).method93();// 532
             }
          }
 
@@ -96,8 +96,8 @@ public class Class482 {
    }
 
    // $VF: synthetic method
-   public static Vector method1274(int var0) {
-      Vector var4 = new Vector();// 557
+   public static Vector<Class10> method1274(int var0) {
+      Vector<Class10> var4 = new Vector<>();// 557
       String var2;
       String var10000 = var2 = Integer.toBinaryString(var0);// 34
 
@@ -108,57 +108,57 @@ public class Class482 {
       if (var2.startsWith("0")) {// 260
          boolean var7;
          if (var7 = method1281(var4, var2.substring(1, 4))) {// 30 143
-            var4.add(Class119.field26);// 252
-            var4.add(Class119.field96);// 20
+            var4.add(Opcodes.field26);// 252
+            var4.add(Opcodes.field96);// 20
          }
 
          if (method1281(var4, var2.substring(4, 7)) && var7) {// 239
-            var4.add(Class119.field112);// 310
+            var4.add(Opcodes.field112);// 310
          }
 
          return var4;// 498
       } else if (var2.endsWith("0")) {// 484
          boolean var6;
          if (var6 = method1281(var4, var2.substring(0, 3))) {// 389 409
-            var4.add(Class119.field92);// 18
-            var4.add(Class119.field96);// 513
+            var4.add(Opcodes.field92);// 18
+            var4.add(Opcodes.field96);// 513
          }
 
          if (method1281(var4, var2.substring(3, 6)) && var6) {// 151
-            var4.add(Class119.field75);// 530
-            var4.add(Class119.field96);// 491
-            var4.add(Class119.field112);// 147
+            var4.add(Opcodes.field75);// 530
+            var4.add(Opcodes.field96);// 491
+            var4.add(Opcodes.field112);// 147
          }
 
          return var4;// 338
       } else if (var2.charAt(3) == '0') {// 273
          boolean var5;
          if (var5 = method1281(var4, var2.substring(0, 3))) {// 141 161
-            var4.add(Class119.field92);// 580
-            var4.add(Class119.field96);// 226
+            var4.add(Opcodes.field92);// 580
+            var4.add(Opcodes.field96);// 226
          }
 
          if (method1281(var4, var2.substring(4, 7)) && var5) {// 78
-            var4.add(Class119.field112);// 418
+            var4.add(Opcodes.field112);// 418
          }
 
          return var4;// 533
       } else {
          method1281(var4, var2.substring(0, 3));// 406
-         var4.add(Class119.field92);// 1
-         var4.add(Class119.field96);// 46
+         var4.add(Opcodes.field92);// 1
+         var4.add(Opcodes.field96);// 46
          boolean var3 = method1276(var4, var2.substring(3, 5));// 170
          if (var3) {// 553
-            var4.add(Class119.field129);// 58
-            var4.add(Class119.field96);// 190
+            var4.add(Opcodes.field129);// 58
+            var4.add(Opcodes.field96);// 190
          }
 
          if (method1276(var4, var2.substring(5, 7))) {// 465
-            var4.add(Class119.field112);// 132
+            var4.add(Opcodes.field112);// 132
          }
 
          if (var3) {// 184
-            var4.add(Class119.field112);// 534
+            var4.add(Opcodes.field112);// 534
          }
 
          return var4;// 488
@@ -171,6 +171,7 @@ public class Class482 {
       if ((var1 = var0.method431()) == null) {// 438 592
          return -1;
       } else {
+         int var3;
          for (int var10000 = var3 = var1.length - 1; var10000 >= 0; var10000 = --var3) {// 483
             if (var1[var3] instanceof Class201) {// 181
                return ((Class201)var1[var3]).method2();// 433
@@ -182,16 +183,16 @@ public class Class482 {
    }
 
    // $VF: synthetic method
-   public static boolean method1276(Vector var0, String var1) {
+   public static boolean method1276(Vector<Class10> var0, String var1) {
       if ("00".equals(var1)) {// 68
          return false;// 59
       } else {
          if ("01".equals(var1)) {// 391
-            var0.add(Class119.field75);// 330
+            var0.add(Opcodes.field75);// 330
          } else if ("10".equals(var1)) {// 589
-            var0.add(Class119.field129);// 579
+            var0.add(Opcodes.field129);// 579
          } else if ("11".equals(var1)) {// 555
-            var0.add(Class119.field26);// 73
+            var0.add(Opcodes.field26);// 73
          }
 
          return true;// 398
@@ -200,10 +201,10 @@ public class Class482 {
 
    // $VF: synthetic method
    public static boolean method1277(String var0) {
-      String var1 = var0;
 
+	   int var2;
       for (int var10000 = var2 = field1591.size() - 1; var10000 >= 0; var10000 = --var2) {// 167
-         if (((Pattern)field1591.get(var2)).matcher(var1).matches()) {// 414
+         if (((Pattern)field1591.get(var2)).matcher(var0).matches()) {// 414
             return true;
          }
       }
@@ -213,8 +214,7 @@ public class Class482 {
 
    // $VF: synthetic method
    public static void method1278(Class206 var0) {
-      Class206 var1 = var0;
-      String var6 = "Ljava/lang/String;";// 169
+	   String var6 = "Ljava/lang/String;";// 169
 
       Class208[] var10;
       int var16;
@@ -223,7 +223,7 @@ public class Class482 {
          if ((var4 = var10[var16]).method369() != null) {// 50 137
             Class251 var5;
             Class246 var18;
-            Class246 var33 = var18 = (var5 = Class376.method716(var4, var1.method93(), var1.method46(), var1.method46().method402()).method42()).method32();// 135 253 443
+            Class246 var33 = var18 = (var5 = Class376.method716(var4, var0.method93(), var0.method46(), var0.method46().method402()).method42()).method32();// 135 253 443
 
             while (var33 != null) {// 166
                Class246 var35;
@@ -231,11 +231,11 @@ public class Class482 {
                   var35 = var18;
                } else {
                   ldc var7 = (ldc)var18.method18();// 373
-                  if (!(var1.method46().method174(var7.method2()) instanceof Class185)) {// 72 268
+                  if (!(var0.method46().method174(var7.method2()) instanceof Class185)) {// 72 268
                      var35 = var18;
                   } else {
                      label149: {
-                        Class221 var9 = var1.method46();// 66
+                        Class221 var9 = var0.method46();// 66
                         int var2 = var7.method11(var9);// 536
                         Class246 var11 = var18.method32();// 307
                         int var12 = 0;// 218
@@ -264,18 +264,18 @@ public class Class482 {
                               } while ((var11 = var11.method37()) != null && var3 == -1);// 95 516
 
                               String var17 = new StringBuilder()
-                                 .insert(0, var1.method93())// 55
+                                 .insert(0, var0.method93())// 55
                                  .append(".")
                                  .append(var4.method190())
                                  .append("(")
-                                 .append(method1273(var1))
+                                 .append(method1273(var0))
                                  .toString();
                               if (var3 != -1) {// 77
                                  var17 = var17 + ":" + var3;
                               }
 
                               var17 = var17 + ")";// 288
-                              Class528.method1558("Comparing strings using '==' operator at " + var17);// 129
+                              Logger.warning("Comparing strings using '==' operator at " + var17);// 129
                               var35 = var18;
                               break label149;// 258
                            }
@@ -305,7 +305,7 @@ public class Class482 {
                   var38 = var19;
                } else {
                   Class5 var24 = (Class5)var19.method18();// 81
-                  Class221 var8 = var1.method46();// 401
+                  Class221 var8 = var0.method46();// 401
                   if (!var6.equals(var24.method518(var8))) {// 394
                      var38 = var19;
                   } else {
@@ -338,18 +338,18 @@ public class Class482 {
                               } while ((var21 = var21.method37()) != null && var31 == -1);// 523 570
 
                               String var22 = new StringBuilder()
-                                 .insert(0, var1.method93())// 282
+                                 .insert(0, var0.method93())// 282
                                  .append(".")
                                  .append(var4.method190())
                                  .append("(")
-                                 .append(method1273(var1))
+                                 .append(method1273(var0))
                                  .toString();
                               if (var31 != -1) {// 503
                                  var22 = var22 + ":" + var31;
                               }
 
                               var22 = var22 + ")";// 339
-                              Class528.method1558("Comparing strings using '==' operator at " + var22);// 308
+                              Logger.warning("Comparing strings using '==' operator at " + var22);// 308
                               var38 = var19;
                               break label146;// 596
                            }
@@ -409,21 +409,21 @@ public class Class482 {
       var12.method451(var6.method47("java.lang.String", "length", Class138.field591, Class138.field582, (short)182));// 71
       var12.method451(var6.method67(Class138.field585, (short)1));// 375
       var12.method484(new Class116(var5, 1));// 441
-      var12.method451(Class119.field113);// 575
-      var12.method451(Class119.field107);// 547
+      var12.method451(Opcodes.dup);// 575
+      var12.method451(Opcodes.pop2);// 547
       var12.method451(Class120.method75(Class138.field583, 1));// 326
       var12.method484(new Class116(var5, var2));// 29
       var12.method484(new Class116(var5, 1));// 521
-      var12.method451(Class119.field113);// 457
-      var12.method451(Class119.field107);// 546
+      var12.method451(Opcodes.dup);// 457
+      var12.method451(Opcodes.pop2);// 546
       var12.method451(Class120.method75(Class138.field591, 2));// 51
       var12.method451(Class120.method77(Class138.field583, 1));// 598
-      var12.method451(Class119.field126);// 325
+      var12.method451(Opcodes.field126);// 325
       var12.method484(new Class116(var5, 1));// 392
       var12.method484(new Class116(var5, 1));// 44
-      var12.method451(Class119.field113);// 362
-      var12.method451(Class119.field107);// 476
-      var12.method451(Class119.field105);// 231
+      var12.method451(Opcodes.dup);// 362
+      var12.method451(Opcodes.pop2);// 476
+      var12.method451(Opcodes.isub);// 231
       var12.method451(Class120.method75(Class138.field591, 3));// 420
       Class90 var14 = Class120.method73((short)167, null);// 454
       var12.method439(var14);// 343
@@ -433,30 +433,30 @@ public class Class482 {
       var12.method451(Class120.method77(Class138.field591, 3));// 519
       var12.method451(var6.method47("java.lang.String", "charAt", Class138.field585, new Class138[]{Class138.field591}, (short)182));// 376
       var12.method451(Class120.method77(Class138.field591, 2));// 492
-      var12.method451(Class119.field112);// 482
-      var12.method451(Class119.field27);// 432
+      var12.method451(Opcodes.field112);// 482
+      var12.method451(Opcodes.field27);// 432
       var12.method484(new Class116(var5, 1));// 155
-      var12.method451(Class119.field113);// 2
-      var12.method451(Class119.field107);// 505
-      var12.method451(Class119.field90);// 583
+      var12.method451(Opcodes.dup);// 2
+      var12.method451(Opcodes.pop2);// 505
+      var12.method451(Opcodes.castore);// 583
       var12.method451(Class120.method77(Class138.field591, 2));// 19
       var12.method451(Class120.method77(Class138.field591, 3));// 86
-      var12.method451(Class119.field112);// 473
-      var12.method451(Class119.field27);// 131
+      var12.method451(Opcodes.field112);// 473
+      var12.method451(Opcodes.field27);// 131
       var12.method451(Class120.method75(Class138.field591, 2));// 528
       var12.method451(Class120.method77(Class138.field591, 2));// 289
       var12.method484(new Class116(var5, 63));// 264
       var12.method484(new Class116(var5, 1));// 458
-      var12.method451(Class119.field113);// 591
-      var12.method451(Class119.field107);// 572
-      var12.method451(Class119.field89);// 348
-      var12.method451(Class119.field27);// 150
+      var12.method451(Opcodes.dup);// 591
+      var12.method451(Opcodes.pop2);// 572
+      var12.method451(Opcodes.field89);// 348
+      var12.method451(Opcodes.field27);// 150
       var12.method451(Class120.method75(Class138.field591, 2));// 56
       var12.method451(new Class286(3, -1));// 416
       Class246 var15 = var12.method451(Class120.method77(Class138.field591, 3));// 211
       var12.method439(Class120.method73((short)156, var18));// 178 427
       var12.method451(var6.method58("java.lang.String"));// 262
-      var12.method451(Class119.field113);// 475
+      var12.method451(Opcodes.dup);// 475
       var12.method451(Class120.method77(Class138.field583, 1));// 100
       var12.method451(var6.method47("java.lang.String", "<init>", Class138.field586, new Class138[]{new Class145(Class138.field585, 1)}, (short)183));// 202
       var12.method451(Class120.method55(Class138.field583));// 250
@@ -496,23 +496,23 @@ public class Class482 {
          return false;// 604
       } else {
          if ("001".equals(var1)) {// 22
-            var0.add(Class119.field75);// 6
+            var0.add(Opcodes.field75);// 6
          } else if ("010".equals(var1)) {// 144
-            var0.add(Class119.field129);// 461
+            var0.add(Opcodes.field129);// 461
          } else if ("011".equals(var1)) {// 358
-            var0.add(Class119.field26);// 192
+            var0.add(Opcodes.field26);// 192
          } else if ("100".equals(var1)) {// 574
-            var0.add(Class119.field92);// 272
+            var0.add(Opcodes.field92);// 272
          } else if ("101".equals(var1)) {// 321
-            var0.add(Class119.field116);// 179
+            var0.add(Opcodes.field116);// 179
          } else if ("110".equals(var1)) {// 146
-            var0.add(Class119.field26);// 567
-            var0.add(Class119.field116);// 400
-            var0.add(Class119.field112);// 33
+            var0.add(Opcodes.field26);// 567
+            var0.add(Opcodes.field116);// 400
+            var0.add(Opcodes.field112);// 33
          } else if ("111".equals(var1)) {// 0
-            var0.add(Class119.field129);// 240
-            var0.add(Class119.field116);// 246
-            var0.add(Class119.field112);// 552
+            var0.add(Opcodes.field129);// 240
+            var0.add(Opcodes.field116);// 246
+            var0.add(Opcodes.field112);// 552
          }
 
          return true;// 278

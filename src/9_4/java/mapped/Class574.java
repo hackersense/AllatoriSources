@@ -23,7 +23,7 @@ public class Class574 {
                var1.method552(method1905(new BufferedInputStream(new FileInputStream(var7)), var7.getName()), var2);// 332
             } catch (Exception var6) {
                if (!var7.getName().endsWith("module-info.class")) {// 30
-                  Class528.method1559("Cannot parse class " + var7.getName());// 143
+                  Logger.error("Cannot parse class " + var7.getName());// 143
                }
             }
          }

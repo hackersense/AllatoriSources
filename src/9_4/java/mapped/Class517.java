@@ -133,7 +133,7 @@ public class Class517 {
                var6.method1468(var8, new File(new StringBuilder().append(var6.field1760).append("/").append(var9).toString()));// 418
             } else {
                if (var8 == null) {// 185
-                  Class528.method1558("File " + var10.getPath() + " is copied with no modifications, as it is not in its package.");// 170
+                  Logger.warning("File " + var10.getPath() + " is copied with no modifications, as it is not in its package.");// 170
                }
 
                new File(var2.getPath()).mkdirs();// 58

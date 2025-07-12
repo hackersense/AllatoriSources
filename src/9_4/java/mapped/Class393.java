@@ -94,7 +94,7 @@ public class Class393 {
          for (int var8 = var1; var8 < var7.size(); var8 = ++var1) {// 365
             Class206 var5 = (Class206)var7.get(var1);// 366
             if (var4.containsKey(var5)) {// 263
-               Class528.method1559("Incorrect classes order");// 225
+               Logger.error("Incorrect classes order");// 225
             }
          }
       }
@@ -149,11 +149,11 @@ public class Class393 {
                      String var13 = var12.replace('/', '.');// 223
                      if (!var2.field1205.containsKey(var13)) {// 45
                         var2.field1205.put(var13, "");// 23
-                        Class528.method1558("Class '" + var13 + "' cannot be found.");// 440
+                        Logger.warning("Class '" + var13 + "' cannot be found.");// 440
                      }
                   }
                } catch (VerifyError var10) {// 411
-                  Class528.method1558("Cannot read class. Possible JVM compile and runtime versions mismatch: " + var10.getMessage());// 468
+                  Logger.warning("Cannot read class. Possible JVM compile and runtime versions mismatch: " + var10.getMessage());// 468
                }
             } else {
                int var11;
@@ -268,7 +268,7 @@ public class Class393 {
             var1.add("-=404=-");// 541
             if (!var4.field1205.containsKey(var2)) {// 550
                var4.field1205.put(var2, "");// 510
-               Class528.method1558("Class '" + var2 + "' cannot be found.");// 456
+               Logger.warning("Class '" + var2 + "' cannot be found.");// 456
             }
          }
       }
@@ -317,9 +317,9 @@ public class Class393 {
       }
 
       if (var2.field1205.size() > 0) {// 170
-         Class528.method1558(
+         Logger.warning(
             "Some classes weren't found. It may result in weaker obfuscation. Add needed jars to the 'classpath' element of the configuration file."// 553
-         );
+                       );
       }
 
       var2.method735();// 58

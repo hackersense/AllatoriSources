@@ -3,7 +3,7 @@ package mapped;
 import smardecSB.*;
 
 // $VF: Compiled from s
-public interface Class119 {
+public interface Opcodes {
    // $VF: synthetic field
    Class10 field25 = new fconst_x(0.0F);
    // $VF: synthetic field
@@ -23,7 +23,7 @@ public interface Class119 {
    // $VF: synthetic field
    Class51 field33 = new Class57();
    // $VF: synthetic field
-   Class277 field34 = Class119.field101;
+   Class277 field34 = Opcodes.field101;
    // $VF: synthetic field
    Class10 field35 = new Class261();
    // $VF: synthetic field
@@ -35,7 +35,7 @@ public interface Class119 {
    // $VF: synthetic field
    Class10 field39 = new nop();
    // $VF: synthetic field
-   Class9 field40 = new pop();
+   Class9 pop = new pop();
    // $VF: synthetic field
    Class51 field41 = new lsub();
    // $VF: synthetic field
@@ -47,7 +47,7 @@ public interface Class119 {
    // $VF: synthetic field
    Class33 field45 = new daload();
    // $VF: synthetic field
-   Class33 field46 = new aaload();
+   Class33 aaload = new aaload();
    // $VF: synthetic field
    Class12 field47 = new Class13();
    // $VF: synthetic field
@@ -119,7 +119,7 @@ public interface Class119 {
    // $VF: synthetic field
    Class12 field81 = new Class320();
    // $VF: synthetic field
-   Class9 field82 = new dup_x2();
+   Class9 dup_x2 = new dup_x2();
    // $VF: synthetic field
    Class33 field83 = new aastore();
    // $VF: synthetic field
@@ -135,7 +135,7 @@ public interface Class119 {
    // $VF: synthetic field
    Class51 field89 = new Class75();
    // $VF: synthetic field
-   Class33 field90 = new castore();
+   Class33 castore = new castore();
    // $VF: synthetic field
    Class9 field91 = new dup2();
    // $VF: synthetic field
@@ -165,15 +165,15 @@ public interface Class119 {
    // $VF: synthetic field
    Class51 field104 = new ineg();
    // $VF: synthetic field
-   Class51 field105 = new isub();
+   Class51 isub = new isub();
    // $VF: synthetic field
    Class277 field106 = new iload_x(2);
    // $VF: synthetic field
-   Class9 field107 = new pop2();
+   Class9 pop2 = new pop2();
    // $VF: synthetic field
    Class277 field108 = new iload_x(1);
    // $VF: synthetic field
-   Class9 field109 = new swap();
+   Class9 swap = new swap();
    // $VF: synthetic field
    Class33 field110 = new caload();
    // $VF: synthetic field
@@ -181,7 +181,7 @@ public interface Class119 {
    // $VF: synthetic field
    Class51 field112 = new Class84();
    // $VF: synthetic field
-   Class9 field113 = new dup();
+   Class9 dup = new dup();
    // $VF: synthetic field
    Class51 field114 = new ldiv();
    // $VF: synthetic field
@@ -191,7 +191,7 @@ public interface Class119 {
    // $VF: synthetic field
    Class51 field117 = new lrem();
    // $VF: synthetic field
-   Class9 field118 = new dup_x1();
+   Class9 dup_x1 = new dup_x1();
    // $VF: synthetic field
    Class51 field119 = new ladd();
    // $VF: synthetic field

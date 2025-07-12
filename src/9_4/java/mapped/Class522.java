@@ -85,9 +85,9 @@ public class Class522 {
          return true;// 61
       } catch (Exception var2) {// 525
          if (var2.getCause() == null) {// 220
-            Class528.method1559("Configuration error. " + var2.getMessage());// 593
+            Logger.error("Configuration error. " + var2.getMessage());// 593
          } else {
-            Class528.method1559("Error reading configuration. " + var2.getCause().getMessage());// 540
+            Logger.error("Error reading configuration. " + var2.getCause().getMessage());// 540
          }
 
          return false;// 291

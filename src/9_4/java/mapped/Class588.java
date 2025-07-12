@@ -95,7 +95,7 @@ public class Class588 {
       } catch (Exception var2) {
          var2.printStackTrace();
          try {
-            Class528.method1558("Rerunning obfuscation due to un-renamed packages.");// 269
+            Logger.warning("Rerunning obfuscation due to un-renamed packages.");// 269
             new Class340(this.field2358).method588();// 455
          } catch (Exception var1) {
             var1.printStackTrace();

@@ -127,26 +127,26 @@ public class Class428 implements Class418 {
 
       var9.method451(Class120.method77(Class138.field583, 0));// 153
       var9.method451(var5.method64(Class138.field593));// 477
-      var9.method451(Class119.field113);// 53
+      var9.method451(Opcodes.dup);// 53
       var9.method451(Class120.method75(Class138.field583, 0));// 584
       var9.method451(var5.method47("java.lang.String", "length", Class138.field591, Class138.field582, (short)182));// 200
-      var9.method451(Class119.field113);// 84
+      var9.method451(Opcodes.dup);// 84
       var9.method451(var5.method67(Class138.field585, (short)1));// 393
-      var9.method451(Class119.field109);// 43
+      var9.method451(Opcodes.swap);// 43
       var9.method484(new Class116(var4, 1));// 293
-      var9.method451(Class119.field105);// 54
-      var9.method451(Class119.field82);// 74
+      var9.method451(Opcodes.isub);// 54
+      var9.method451(Opcodes.dup_x2);// 74
       var9.method451(Class120.method75(Class138.field591, 3));// 241
       var9.method451(Class120.method75(Class138.field583, 1));// 526
       var9.method451(Class120.method75(Class138.field591, 4));// 136
-      var9.method451(Class119.field82);// 158
+      var9.method451(Opcodes.dup_x2);// 158
       if (var8) {// 90
-         var9.method451(Class120.field107);// 294
+         var9.method451(Class120.pop2);// 294
          var9.method451(Class120.method75(Class138.field591, 2));// 342
       } else {
-         var9.method451(Class120.field40);// 96
+         var9.method451(Class120.pop);// 96
          var9.method451(Class120.method75(Class138.field591, 2));// 581
-         var9.method451(Class120.field40);// 359
+         var9.method451(Class120.pop);// 359
       }
 
       Class90 var11 = Class120.method73((short)155, null);// 113
@@ -154,30 +154,30 @@ public class Class428 implements Class418 {
       var9.method451(Class120.method77(Class138.field583, 1));// 302
       var9.method451(Class120.method77(Class138.field583, 0));// 203
       var9.method451(Class120.method77(Class138.field591, 3));// 70
-      var9.method451(Class119.field118);// 597
+      var9.method451(Opcodes.dup_x1);// 597
       var9.method451(var5.method47("java.lang.String", "charAt", Class138.field585, new Class138[]{Class138.field591}, (short)182));// 118
       var9.method451(Class120.method77(Class138.field591, 2));// 379
-      var9.method451(Class119.field112);// 353
-      var9.method451(Class119.field27);// 189
+      var9.method451(Opcodes.field112);// 353
+      var9.method451(Opcodes.field27);// 189
       var9.method451(new Class286(3, -1));// 165
-      var9.method451(Class119.field90);// 447
+      var9.method451(Opcodes.castore);// 447
       var9.method451(Class120.method77(Class138.field591, 3));// 79
       Class90 var15 = Class120.method73((short)155, null);// 396
       var9.method439(var15);// 364
       var9.method451(Class120.method77(Class138.field583, 1));// 154
       var9.method451(Class120.method77(Class138.field583, 0));// 861
       var9.method451(Class120.method77(Class138.field591, 3));// 752
-      var9.method451(Class119.field118);// 847
+      var9.method451(Opcodes.dup_x1);// 847
       var9.method451(var5.method47("java.lang.String", "charAt", Class138.field585, new Class138[]{Class138.field591}, (short)182));// 958
       var9.method451(Class120.method77(Class138.field591, 4));// 712
       var9.method451(new Class286(3, -1));// 985
-      var9.method451(Class119.field112);// 921
-      var9.method451(Class119.field27);// 677
-      var9.method451(Class119.field90);// 698
+      var9.method451(Opcodes.field112);// 921
+      var9.method451(Opcodes.field27);// 677
+      var9.method451(Opcodes.castore);// 698
       var9.method451(Class120.method77(Class138.field591, 3));// 689
       var9.method439(Class120.method73((short)167, var13));// 764
       Class246 var14 = var9.method451(var5.method58("java.lang.String"));// 609
-      var9.method451(Class119.field113);// 633
+      var9.method451(Opcodes.dup);// 633
       var9.method451(Class120.method77(Class138.field583, 1));// 684
       var9.method451(var5.method47("java.lang.String", "<init>", Class138.field586, new Class138[]{new Class145(Class138.field585, 1)}, (short)183));// 892
       var9.method451(Class120.method55(Class138.field583));// 632
@@ -196,15 +196,15 @@ public class Class428 implements Class418 {
       Class251 var13 = new Class251();// 734
       Class203 var6 = new Class203(9, Class138.field593, new Class138[]{field1253}, new String[]{"arg0"}, field1265, var1.method93(), var13, var4);// 675
       var13.method451(var5.method58("java.lang.StringBuffer"));// 816
-      var13.method451(Class119.field113);// 974
+      var13.method451(Opcodes.dup);// 974
       String var3 = "java.lang.RuntimeException";// 649
       var13.method451(var5.method58(var3));// 705
-      var13.method451(Class119.field113);// 697
+      var13.method451(Opcodes.dup);// 697
       var13.method451(var5.method47(var3, "<init>", Class138.field586, Class138.field582, (short)183));// 982
       var13.method451(var5.method47(var3, "getStackTrace", new Class145(new Class144("java.lang.StackTraceElement"), 1), Class138.field582, (short)182));// 722
       var13.method484(new Class116(var4, 1));// 613
-      var13.method451(Class119.field46);// 867
-      var13.method451(Class119.field82);// 933
+      var13.method451(Opcodes.aaload);// 867
+      var13.method451(Opcodes.dup_x2);// 933
       boolean var16 = ((int[])field1250.get(var1.method93()))[2] == 0;// 744
       boolean var8 = Class337.method547() > 0.5;// 655
       Class251 var10000;
@@ -221,7 +221,7 @@ public class Class428 implements Class418 {
       }
 
       var10000.method451(var5.method47("java.lang.StringBuffer", "<init>", Class138.field586, new Class138[]{Class138.field593}, (short)183));
-      var13.method451(Class119.field109);// 727
+      var13.method451(Opcodes.swap);// 727
       if (var8) {// 853
          var13.method451(// 787
             var5.method47("java.lang.StackTraceElement", var16 ? "getMethodName" : "getClassName", Class138.field593, Class138.field582, (short)182)
@@ -232,17 +232,17 @@ public class Class428 implements Class418 {
          var13.method451(// 870
             var5.method47("java.lang.StackTraceElement", var16 ? "getClassName" : "getMethodName", Class138.field593, Class138.field582, (short)182)
          );
-         var13.method451(Class119.field78);// 929
-         var13.method451(Class119.field109);// 676
+         var13.method451(Opcodes.field78);// 929
+         var13.method451(Opcodes.swap);// 676
          var13.method451(var5.method47("java.lang.StringBuffer", "insert", Class138.field587, new Class138[]{Class138.field591, Class138.field593}, (short)182));// 836
          var10000 = var13;// 610
       }
 
       var10000.method451(var5.method47("java.lang.StringBuffer", "toString", Class138.field593, Class138.field582, (short)182));
-      var13.method451(Class119.field113);// 639
+      var13.method451(Opcodes.dup);// 639
       var13.method451(var5.method47("java.lang.String", "length", Class138.field591, Class138.field582, (short)182));// 822
       var13.method484(new Class116(var4, 1));// 627
-      var13.method451(Class119.field105);// 959
+      var13.method451(Opcodes.isub);// 959
       var8 = Class337.method547() <= 0.5;// 851
       Vector var17;
       Vector var25;
@@ -255,9 +255,9 @@ public class Class428 implements Class418 {
       }
 
       var25.addAll(Class482.method1274(((int[])field1250.get(var1.method93()))[1]));
-      var13.method451(Class119.field144);// 819
-      var13.method451(Class119.field138);// 814
-      var13.method451(Class119.field40);// 920
+      var13.method451(Opcodes.field144);// 819
+      var13.method451(Opcodes.field138);// 814
+      var13.method451(Opcodes.pop);// 920
       Iterator var14 = var17.iterator();// 751
       Iterator var26 = var14;
 
@@ -269,38 +269,38 @@ public class Class428 implements Class418 {
 
       var13.method451(Class120.method77(Class138.field583, 0));// 828
       var13.method451(var5.method64(Class138.field593));// 896
-      var13.method451(Class119.field113);// 813
+      var13.method451(Opcodes.dup);// 813
       var13.method451(Class120.method75(Class138.field583, 0));// 611
       var13.method451(var5.method47("java.lang.String", "length", Class138.field591, Class138.field582, (short)182));// 702
-      var13.method451(Class119.field113);// 760
+      var13.method451(Opcodes.dup);// 760
       var13.method451(var5.method67(Class138.field585, (short)1));// 954
-      var13.method451(Class119.field109);// 858
+      var13.method451(Opcodes.swap);// 858
       var13.method484(new Class116(var4, 1));// 630
-      var13.method451(Class119.field105);// 791
-      var13.method451(Class119.field82);// 815
+      var13.method451(Opcodes.isub);// 791
+      var13.method451(Opcodes.dup_x2);// 815
       var13.method451(Class120.method75(Class138.field591, 1));// 747
       var13.method451(Class120.method75(Class138.field583, 3));// 746
       var13.method451(Class120.method75(Class138.field591, 7));// 882
       if (var8) {// 891
-         var13.method451(Class119.field82);// 673
-         var13.method451(Class119.field107);// 948
+         var13.method451(Opcodes.dup_x2);// 673
+         var13.method451(Opcodes.pop2);// 948
          var13.method451(Class120.method75(Class138.field591, 4));// 629
          var10000 = var13;
       } else {
-         var13.method451(Class119.field82);// 736
-         var13.method451(Class119.field40);// 681
+         var13.method451(Opcodes.dup_x2);// 736
+         var13.method451(Opcodes.pop);// 681
          var13.method451(Class120.method75(Class138.field591, 4));// 759
-         var13.method451(Class119.field40);// 875
+         var13.method451(Opcodes.pop);// 875
          var10000 = var13;// 740
       }
 
-      var10000.method451(Class119.field109);
-      var13.method451(Class119.field40);// 732
-      var13.method451(Class119.field109);// 806
-      var13.method451(Class119.field113);// 911
+      var10000.method451(Opcodes.swap);
+      var13.method451(Opcodes.pop);// 732
+      var13.method451(Opcodes.swap);// 806
+      var13.method451(Opcodes.dup);// 911
       var13.method451(Class120.method75(Class138.field591, 2));// 947
       var13.method451(Class120.method75(Class138.field591, 5));// 903
-      var13.method451(Class119.field109);// 907
+      var13.method451(Opcodes.swap);// 907
       var13.method451(Class120.method75(Class138.field583, 6));// 909
       Class90 var15 = Class120.method73((short)167, null);// 612
       var13.method439(var15);// 874
@@ -308,16 +308,16 @@ public class Class428 implements Class418 {
       var13.method451(Class120.method77(Class138.field591, 4));// 793
       var13.method451(Class120.method77(Class138.field583, 0));// 820
       var13.method451(Class120.method77(Class138.field591, 1));// 757
-      var13.method451(Class119.field82);// 726
+      var13.method451(Opcodes.dup_x2);// 726
       var13.method451(var5.method47("java.lang.String", "charAt", Class138.field585, new Class138[]{Class138.field591}, (short)182));// 720
       var13.method451(Class120.method77(Class138.field583, 6));// 653
       var13.method451(new Class286(1, -1));// 626
       var13.method451(Class120.method77(Class138.field591, 2));// 775
       var13.method451(var5.method47("java.lang.String", "charAt", Class138.field585, new Class138[]{Class138.field591}, (short)182));// 643
-      var13.method451(Class119.field112);// 724
-      var13.method451(Class119.field112);// 807
-      var13.method451(Class119.field27);// 849
-      var13.method451(Class119.field90);// 871
+      var13.method451(Opcodes.field112);// 724
+      var13.method451(Opcodes.field112);// 807
+      var13.method451(Opcodes.field27);// 849
+      var13.method451(Opcodes.castore);// 871
       var13.method451(Class120.method77(Class138.field591, 1));// 918
       Class90 var21 = Class120.method73((short)156, null);// 839
       var13.method439(var21);// 607
@@ -327,17 +327,17 @@ public class Class428 implements Class418 {
       var13.method451(Class120.method77(Class138.field591, 7));// 785
       var13.method451(Class120.method77(Class138.field583, 0));// 946
       var13.method451(Class120.method77(Class138.field591, 1));// 745
-      var13.method451(Class119.field82);// 901
+      var13.method451(Opcodes.dup_x2);// 901
       var13.method451(var5.method47("java.lang.String", "charAt", Class138.field585, new Class138[]{Class138.field591}, (short)182));// 952
       var13.method451(Class120.method77(Class138.field583, 6));// 616
       var13.method451(Class120.method77(Class138.field591, 2));// 878
       var13.method451(var5.method47("java.lang.String", "charAt", Class138.field585, new Class138[]{Class138.field591}, (short)182));// 943
-      var13.method451(Class119.field112);// 856
+      var13.method451(Opcodes.field112);// 856
       var13.method451(new Class286(2, -1));// 830
-      var13.method451(Class119.field112);// 957
-      var13.method451(Class119.field27);// 769
+      var13.method451(Opcodes.field112);// 957
+      var13.method451(Opcodes.field27);// 769
       var13.method451(new Class286(1, -1));// 922
-      var13.method451(Class119.field90);// 718
+      var13.method451(Opcodes.castore);// 718
       var13.method451(Class120.method77(Class138.field591, 2));// 711
       Class90 var10 = Class120.method73((short)156, null);// 859
       var13.method439(var10);// 636
@@ -346,7 +346,7 @@ public class Class428 implements Class418 {
       Class246 var11 = var13.method451(Class120.method77(Class138.field591, 1));// 951
       Class247 var20 = var13.method439(Class120.method73((short)156, var19));// 645 693
       Class246 var12 = var13.method451(var5.method58("java.lang.String"));// 794
-      var13.method451(Class119.field113);// 831
+      var13.method451(Opcodes.dup);// 831
       var13.method451(Class120.method77(Class138.field583, 3));// 762
       var13.method451(var5.method47("java.lang.String", "<init>", Class138.field586, new Class138[]{new Class145(Class138.field585, 1)}, (short)183));// 784
       var13.method451(Class120.method55(Class138.field583));// 624
@@ -703,7 +703,7 @@ public class Class428 implements Class418 {
                      if (!field1260 && var3.method18() instanceof Class262) {// 603
                         Class262 var30 = (Class262)var3.method18();// 278
                         if (field1249.equals(var30.method518(var22.method46()))) {// 466
-                           Class528.method1558("javac Java compiler should be run with -XDstringConcat=inline flag to encrypt all strings.");// 467
+                           Logger.warning("javac Java compiler should be run with -XDstringConcat=inline flag to encrypt all strings.");// 467
                            field1260 = true;// 485
                         }
                      } else if (var3.method18() instanceof ldc) {// 59
@@ -801,7 +801,7 @@ public class Class428 implements Class418 {
                try {
                   var22.method360(var13, var14.method315());// 157
                } catch (Exception var21) {// 24
-                  Class528.method1559("Error processing " + var22.method93() + "." + var14.method20() + " " + var21.getMessage());// 286
+                  Logger.error("Error processing " + var22.method93() + "." + var14.method20() + " " + var21.getMessage());// 286
                }
             }
          }

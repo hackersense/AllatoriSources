@@ -23,7 +23,7 @@ import smardecSB.lstore_x;
 import java.io.Serializable;
 
 // $VF: Compiled from mk
-public class Class120 implements Class119, Serializable {
+public class Class120 implements Opcodes, Serializable {
    // $VF: synthetic field
    public static Class347[] field147 = new Class347[]{
       new Class347("java.lang.StringBuffer", "append", Class138.field587, new Class138[]{Class138.field593}, 1),
@@ -54,7 +54,7 @@ public class Class120 implements Class119, Serializable {
          case 8:
             return field32;// 247
          case 5:
-            return field90;// 194
+            return castore;// 194
          case 6:
             return field139;// 531
          case 7:
@@ -150,12 +150,12 @@ public class Class120 implements Class119, Serializable {
 
    // $VF: synthetic method
    public static Class9 method52(int var0) {
-      return var0 == 2 ? field107 : field40;// 231
+      return var0 == 2 ? pop2 : pop;// 231
    }
 
    // $VF: synthetic method
    public static Class9 method53(int var0) {
-      return var0 == 2 ? field91 : field113;// 376
+      return var0 == 2 ? field91 : dup;// 376
    }
 
    // $VF: synthetic method
@@ -222,12 +222,12 @@ public class Class120 implements Class119, Serializable {
 
    // $VF: synthetic method
    public static Class9 method56(int var0) {
-      return var0 == 2 ? field136 : field82;// 421
+      return var0 == 2 ? field136 : dup_x2;// 421
    }
 
    // $VF: synthetic method
    public static Class9 method57(int var0) {
-      return var0 == 2 ? field121 : field118;// 264
+      return var0 == 2 ? field121 : dup_x1;// 264
    }
 
    // $VF: synthetic method
@@ -257,7 +257,7 @@ public class Class120 implements Class119, Serializable {
          case '+':
             return field70;// 366
          case '-':
-            return field105;// 212
+            return isub;// 212
          case '/':
             return field135;// 11
          case '<':
@@ -365,7 +365,7 @@ public class Class120 implements Class119, Serializable {
             throw new RuntimeException("Invalid type " + var0);// 383
          case 13:
          case 14:
-            return field46;// 327
+            return aaload;// 327
       }
    }
 

@@ -4,7 +4,7 @@ import java.io.File;
 import mapped.Class338;
 import smardecSB.ProductInformation;
 import mapped.Class522;
-import mapped.Class528;
+import mapped.Logger;
 import mapped.Class559;
 import mapped.Class580;
 import mapped.Class588;
@@ -21,13 +21,13 @@ public class Obfuscate extends Class522 {
       String[] _args;
 	   // 332
 	   if (args.length > 1 && "-silent".equals(args[1])) {// 52
-         Class528.method1556(true);// 10
+         Logger.setSilent(true);// 10
 	   } else {
          System.out.println(funnyASCII());// 335
 	   }
 	   _args = args;
 
-	   if (_args.length != 1 && !Class528.method1560()) {
+	   if (_args.length != 1 && !Logger.isSilent()) {
          showUsage();// 260
          System.exit(0);// 30
       }
@@ -39,7 +39,7 @@ public class Obfuscate extends Class522 {
       try {
          method1479();// 204
       } catch (Exception var2) {// 239
-         Class528.method1559(var2.getMessage());// 310
+         Logger.error(var2.getMessage());// 310
          System.out.println("############### EXCEPTION (" + ProductInformation.getVersionString() + ") ###############");// 498
          var2.printStackTrace();// 484
          System.out.println("#################################################");// 409
@@ -61,7 +61,7 @@ public class Obfuscate extends Class522 {
       }
 
       method1483(var0);// 132
-      Class528.method1557("Obfuscation completed. Writing log file...");// 184
+      Logger.info("Obfuscation completed. Writing log file...");// 184
       Class559.method1781();// 534
    }// 488
 

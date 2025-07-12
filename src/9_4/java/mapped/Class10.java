@@ -61,7 +61,7 @@ public abstract class Class10 implements Cloneable, Serializable {
    // $VF: synthetic method
    public Class10 method18() {
       Class10 var1 = this;
-      if (Class119.field54[this.method22()] != null) {// 588
+      if (Opcodes.field54[this.method22()] != null) {// 588
          return this;// 329 412
       } else {
          try {
@@ -126,7 +126,7 @@ public abstract class Class10 implements Cloneable, Serializable {
 
    // $VF: synthetic method
    public boolean equals(Object var1) {
-      return var1 instanceof Class10 ? field2.method1324(this, (Class10)var1) : false;// 971
+      return var1 instanceof Class10 && field2.method1324(this, (Class10) var1);// 971
    }
 
    // $VF: synthetic method
@@ -147,8 +147,8 @@ public abstract class Class10 implements Cloneable, Serializable {
          var2 = (short)var0.readUnsignedByte();// 94
       }
 
-      if (Class119.field54[var2] != null) {// 69
-         return Class119.field54[var2];// 116
+      if (Opcodes.field54[var2] != null) {// 69
+         return Opcodes.field54[var2];// 116
       } else {
          try {
             switch (var2) {// 223

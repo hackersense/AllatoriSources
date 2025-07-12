@@ -73,7 +73,7 @@ public class Class420 implements Class418 {
                                  }
 
                                  Class10 var3 = var14.method37().method18();// 161
-                                 var9.method480(var9.method480(var9.method480(var14, var3), Class119.field113), Class119.field107);// 141 226 580
+                                 var9.method480(var9.method480(var9.method480(var14, var3), Opcodes.dup), Opcodes.pop2);// 141 226 580
                                  var11 = true;// 123
                               }
 
@@ -117,7 +117,7 @@ public class Class420 implements Class418 {
                                        break label104;
                                     }
 
-                                    var9.method480(var9.method480(var9.method480(var14, var15.method18()), Class119.field113), Class119.field107);// 132 315 465
+                                    var9.method480(var9.method480(var9.method480(var14, var15.method18()), Opcodes.dup), Opcodes.pop2);// 132 315 465
                                     var11 = true;// 184
                                  }
                               }
@@ -130,12 +130,12 @@ public class Class420 implements Class418 {
                               || !(var14.method18() instanceof bipush) && !(var14.method18() instanceof sipush) && !(var14.method18() instanceof iconst_x)) {// 159
                               var16 = var14 = var14.method32();// 192
                            } else {
-                              var9.method480(var9.method480(var9.method448(var14, new Class116(var1.method46(), 1)), Class119.field113), Class119.field107);// 22 377 604
+                              var9.method480(var9.method480(var9.method448(var14, new Class116(var1.method46(), 1)), Opcodes.dup), Opcodes.pop2);// 22 377 604
                               var14 = var14.method32().method32().method32().method32();// 6
                               var16 = var14;
                            }
                         } else {
-                           var9.method480(var9.method480(var9.method448(var14, new Class116(var1.method46(), 1)), Class119.field113), Class119.field107);// 389 409 484
+                           var9.method480(var9.method480(var9.method448(var14, new Class116(var1.method46(), 1)), Opcodes.dup), Opcodes.pop2);// 389 409 484
                            var14 = var14.method32().method32().method32().method32();// 18
                            var16 = var14;
                         }

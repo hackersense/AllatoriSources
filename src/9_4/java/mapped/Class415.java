@@ -464,9 +464,9 @@ public class Class415 implements Class412 {
                if (var10000.method18().method11(var4) == 1) {
                   if (var6 == 2) {// 1241
                      var10000 = var20;
-                     var3.method480(var18, Class119.field82);// 1522
+                     var3.method480(var18, Opcodes.dup_x2);// 1522
                   } else {
-                     var3.method480(var18, Class119.field118);// 1391
+                     var3.method480(var18, Opcodes.dup_x1);// 1391
                      var10000 = var20;
                   }
                } else {
@@ -474,11 +474,11 @@ public class Class415 implements Class412 {
                      if (var18.method18().method11(var4) == 2) {// 1586
                         if (var6 == 2) {// 1006
                            var10000 = var20;
-                           var3.method480(var18, Class119.field136);// 1526
+                           var3.method480(var18, Opcodes.field136);// 1526
                            break label140;
                         }
 
-                        var3.method480(var18, Class119.field121);// 1159
+                        var3.method480(var18, Opcodes.field121);// 1159
                      }
 
                      var10000 = var20;// 1185
@@ -708,9 +708,9 @@ public class Class415 implements Class412 {
 
                   for (int var23 = var7 = 1; var23 < var4; var23 = ++var7) {// 1245
                      if (var9.method18().method11(var1.method46()) == 1) {// 1616
-                        var3.method480(var9, Class119.field113);// 1367
+                        var3.method480(var9, Opcodes.dup);// 1367
                      } else if (var9.method18().method11(var1.method46()) == 2) {// 1296
-                        var3.method480(var9, Class119.field91);// 1228
+                        var3.method480(var9, Opcodes.field91);// 1228
                      }
                   }
 
@@ -826,7 +826,7 @@ public class Class415 implements Class412 {
                         var10000 = var12;
                      } else {
                         Class348.field1027++;// 2149
-                        var3.method480(var12.method32().method32(), Class119.field78);// 2218
+                        var3.method480(var12.method32().method32(), Opcodes.field78);// 2218
                         ((Class292)var8.method18()).method6(var7.method408(var4, "insert", "(ILjava/lang/String;)" + var5));// 1975
                         var10000 = var12;// 2131
                      }
@@ -845,7 +845,7 @@ public class Class415 implements Class412 {
          for (int var6 = var5 = 0; var6 < 1 + Class337.method549(3); var6 = var5) {// 2118
             var3.method457(var4, new bipush((byte)(Class337.method549(120) - 120)));// 2104
             var5++;
-            var3.method457(var4, Class119.field40);// 2085
+            var3.method457(var4, Opcodes.pop);// 2085
          }
       }
    }// 2319
@@ -1058,10 +1058,10 @@ public class Class415 implements Class412 {
          }
 
          if (var10000 != null) {
-            var3.method480(var7, Class119.field40);// 120
+            var3.method480(var7, Opcodes.pop);// 120
             Class348.field1032++;// 487
             if (var8 != null) {// 479
-               var3.method480(var8, Class119.field78);// 347
+               var3.method480(var8, Opcodes.field78);// 347
             }
          }
       }
@@ -1198,7 +1198,7 @@ public class Class415 implements Class412 {
                var10000 = var7;
                var8.method833(var7.method32().method32(), var7.method32().method32().method32());// 761
                var3.method28(var7.method32(), var7.method32().method32());// 965
-               var3.method480(var7.method32().method32(), Class119.field109);// 646
+               var3.method480(var7.method32().method32(), Opcodes.swap);// 646
             }
          }
 
@@ -1517,9 +1517,9 @@ public class Class415 implements Class412 {
                   Class271 var18 = (Class271)var13.method18();// 1651
                   if (!var4[var18.method2()] && var18.method2() >= var5) {// 1628
                      if (var18 instanceof astore_x || var18 instanceof istore_x || var18 instanceof fstore_x) {// 1630
-                        var13.method432(Class119.field40);// 1562
+                        var13.method432(Opcodes.pop);// 1562
                      } else if (var18 instanceof lstore_x || var18 instanceof dstore_x) {// 1231
-                        var13.method432(Class119.field107);// 1404
+                        var13.method432(Opcodes.pop2);// 1404
                      }
                   }
                } else if (var13.method18() instanceof Class286) {// 1011
@@ -1539,7 +1539,7 @@ public class Class415 implements Class412 {
                         continue;// 1378
                      }
 
-                     var21.method432(Class119.field39);// 1458
+                     var21.method432(Opcodes.field39);// 1458
                      var24 = var13;
                      continue;// 1251
                   }
@@ -2005,12 +2005,12 @@ public class Class415 implements Class412 {
                         Class415 var15;
                         if (!(var5 instanceof astore_x) && !(var5 instanceof fstore_x) && !(var5 instanceof istore_x)) {// 359
                            if (var5 instanceof dstore_x || var5 instanceof lstore_x) {// 313
-                              var3.method457(var11, Class119.field91);// 277
+                              var3.method457(var11, Opcodes.field91);// 277
                            }
 
                            var15 = var12;// 302
                         } else {
-                           var3.method457(var11, Class119.field113);// 408
+                           var3.method457(var11, Opcodes.dup);// 408
                            var15 = var12;
                         }
 
@@ -2365,7 +2365,7 @@ public class Class415 implements Class412 {
                      if (var4 instanceof dload_x || var4 instanceof lload_x) {// 969
                         for (int var27 = var8 = 1; var27 < var6; var27 = var8) {// 889
                            var8++;
-                           var3.method480(var14, Class119.field91);// 658
+                           var3.method480(var14, Opcodes.field91);// 658
                         }
                      }
                   } else {
@@ -2382,12 +2382,12 @@ public class Class415 implements Class412 {
 
                            if (var6 - var8 > 2) {// 621
                               var8 += 2;
-                              var3.method480(var14, Class119.field91);// 709
+                              var3.method480(var14, Opcodes.field91);// 709
                            }
 
                            if (var6 - var8 == 2) {// 680
                               var8++;
-                              var3.method480(var14, Class119.field118);// 855
+                              var3.method480(var14, Opcodes.dup_x1);// 855
                            }
 
                            if (var6 - var8 != 1) {// 783
@@ -2395,7 +2395,7 @@ public class Class415 implements Class412 {
                            }
 
                            var8++;
-                           var3.method480(var14, Class119.field113);// 786
+                           var3.method480(var14, Opcodes.dup);// 786
                            var26 = var8;// 934
                         }
                      }
@@ -2558,7 +2558,7 @@ public class Class415 implements Class412 {
 
                         Class348.field1035++;// 2023
                         var3.method457(var16, var22.method18());// 2277
-                        var3.method457(var16, Class119.field109);// 2289
+                        var3.method457(var16, Opcodes.swap);// 2289
                         var4.method833(var16.method32(), var16.method32().method32());
                         var4.method818(var16.method32(), var16.method32().method32());// 2046 2103
 
@@ -2698,7 +2698,7 @@ public class Class415 implements Class412 {
                      var23 = var3;
                   }
 
-                  var23.method480(var8, Class119.field107);// 835
+                  var23.method480(var8, Opcodes.pop2);// 835
                   var8 = var8.method32();// 619
                   var17.method828(var8.method37().method431(), var8.method37(), var8);// 682
 
@@ -2770,7 +2770,7 @@ public class Class415 implements Class412 {
                               var3.method480(var4, new aconst_null());// 2061
                            } else {
                               if (!(var5.method14(var1.method46()) instanceof Class144)) {// 2310
-                                 Class528.method1558(
+                                 Logger.warning(
                                     "[remove-calls] Cannot remove call ("// 2090
                                        + var5.method521(var6)
                                        + "."
@@ -2780,7 +2780,7 @@ public class Class415 implements Class412 {
                                        + "."
                                        + var2.method20()
                                        + " - return value is used"
-                                 );
+                                               );
                                  var10000 = var4;
                                  break label240;// 2157
                               }
@@ -2788,7 +2788,7 @@ public class Class415 implements Class412 {
                               var3.method480(var4, new aconst_null());// 2291
                            }
 
-                           Class528.method1558(
+                           Logger.warning(
                               "[remove-calls] return value of "// 2151
                                  + var5.method521(var6)
                                  + "."
@@ -2798,7 +2798,7 @@ public class Class415 implements Class412 {
                                  + "."
                                  + var2.method20()
                                  + " was replaced with null (0)"
-                           );
+                                         );
                            var37 = var5;
                            break label222;// 2155
                         }
@@ -2830,7 +2830,7 @@ public class Class415 implements Class412 {
                   }
 
                   if (var39 != 0) {
-                     Class528.method1558(
+                     Logger.warning(
                         "[remove-calls] Cannot remove call ("// 2567
                            + var5.method521(var6)
                            + "."
@@ -2840,7 +2840,7 @@ public class Class415 implements Class412 {
                            + "."
                            + var2.method20()
                            + " - parameters not found"
-                     );
+                                   );
                      var10000 = var4;
                   } else {
                      Class246 var10 = var20;// 2436
@@ -2875,14 +2875,14 @@ public class Class415 implements Class412 {
                            }
 
                            if (var12 && var20 != var8) {// 2583
-                              var8.method432(Class119.field39);// 2460
+                              var8.method432(Opcodes.field39);// 2460
                               var8 = var8.method37();// 2441
                               var11 = 0;// 2452
                            }
                         }
 
                         if (var11 > 0) {// 2419
-                           Class528.method1558(
+                           Logger.warning(
                               "[remove-calls] Cannot remove call ("// 2421
                                  + var5.method521(var6)
                                  + "."
@@ -2892,12 +2892,12 @@ public class Class415 implements Class412 {
                                  + "."
                                  + var2.method20()
                                  + " - targeters inside block"
-                           );
+                                         );
                            var10000 = var4;
                         } else {
                            Class246 var27;
                            if ((var27 = var8.method32()) == null) {// 2422 2425
-                              Class528.method1558(
+                              Logger.warning(
                                  "[remove-calls] Cannot remove call ("// 2447
                                     + var5.method521(var6)
                                     + "."
@@ -2907,7 +2907,7 @@ public class Class415 implements Class412 {
                                     + "."
                                     + var2.method20()
                                     + " - unexpected end of block"
-                              );
+                                            );
                               var10000 = var4;
                            } else {
                               Class200[] var28;
@@ -3015,7 +3015,7 @@ public class Class415 implements Class412 {
       while (var10000 != null && (var48 < var4 || var7 < var5 || var8 < var6)) {// 157
          if (!var9.method829(var39.method431())) {// 286
             var10000 = var39;
-         } else if (var39.method18() == Class119.field78) {// 108
+         } else if (var39.method18() == Opcodes.field78) {// 108
             if (var48 >= var4) {// 27
                var10000 = var39;
             } else {
@@ -3024,29 +3024,29 @@ public class Class415 implements Class412 {
                int var12;
                Class415 var70;
                if ((var12 = Class337.method549(5)) == 0) {// 94 209
-                  var11 = var3.method480(var39, Class119.field89);// 69
-                  var3.method480(var39, Class119.field116);// 116
-                  var10 = var3.method480(var39, Class119.field129);// 422
+                  var11 = var3.method480(var39, Opcodes.field89);// 69
+                  var3.method480(var39, Opcodes.field116);// 116
+                  var10 = var3.method480(var39, Opcodes.field129);// 422
                   var70 = var9;
                } else if (var12 == 1) {// 464
-                  var11 = var3.method480(var39, Class119.field133);// 25
-                  var3.method480(var39, Class119.field129);// 31
-                  var10 = var3.method480(var39, Class119.field26);// 21
+                  var11 = var3.method480(var39, Opcodes.field133);// 25
+                  var3.method480(var39, Opcodes.field129);// 31
+                  var10 = var3.method480(var39, Opcodes.field26);// 21
                   var70 = var9;
                } else if (var12 == 2) {// 115
-                  var11 = var3.method480(var39, Class119.field133);// 223
-                  var3.method480(var39, Class119.field26);// 45
-                  var10 = var3.method480(var39, Class119.field116);// 23
+                  var11 = var3.method480(var39, Opcodes.field133);// 223
+                  var3.method480(var39, Opcodes.field26);// 45
+                  var10 = var3.method480(var39, Opcodes.field116);// 23
                   var70 = var9;
                } else if (var12 == 3) {// 440
-                  var11 = var3.method480(var39, Class119.field89);// 248
-                  var3.method480(var39, Class119.field92);// 97
-                  var10 = var3.method480(var39, Class119.field26);// 411
+                  var11 = var3.method480(var39, Opcodes.field89);// 248
+                  var3.method480(var39, Opcodes.field92);// 97
+                  var10 = var3.method480(var39, Opcodes.field26);// 411
                   var70 = var9;
                } else {
-                  var11 = var3.method480(var39, Class119.field112);// 138
-                  var3.method480(var39, Class119.field26);// 285
-                  var10 = var3.method480(var39, Class119.field26);// 119
+                  var11 = var3.method480(var39, Opcodes.field112);// 138
+                  var3.method480(var39, Opcodes.field26);// 285
+                  var10 = var3.method480(var39, Opcodes.field26);// 119
                   var70 = var9;// 238
                }
 
@@ -3090,13 +3090,13 @@ public class Class415 implements Class412 {
                var10000 = var40;// 169
                var48++;
             }
-         } else if (var39.method18() == Class119.field75) {// 216
+         } else if (var39.method18() == Opcodes.field75) {// 216
             if (var48 >= var4) {// 299
                var10000 = var39;
             } else if (var39.method32() != null// 314
                && var39.method32().method32() != null
-               && var39.method32().method18() == Class119.field113
-               && var39.method32().method32().method18() == Class119.field107) {
+               && var39.method32().method18() == Opcodes.dup
+               && var39.method32().method32().method18() == Opcodes.pop2) {
                var10000 = var39;
             } else {
                Class246 var49;
@@ -3104,33 +3104,33 @@ public class Class415 implements Class412 {
                int var63;
                Class415 var73;
                if ((var63 = Class337.method549(7)) == 0) {// 166 443
-                  var56 = var3.method480(var39, Class119.field89);// 434
-                  var3.method480(var39, Class119.field116);// 292
-                  var49 = var3.method480(var39, Class119.field26);// 373
+                  var56 = var3.method480(var39, Opcodes.field89);// 434
+                  var3.method480(var39, Opcodes.field116);// 292
+                  var49 = var3.method480(var39, Opcodes.field26);// 373
                   var73 = var9;
                } else if (var63 == 1) {// 72
-                  var56 = var3.method480(var39, Class119.field133);// 268
-                  var3.method480(var39, Class119.field75);// 497
-                  var49 = var3.method480(var39, Class119.field26);// 66
+                  var56 = var3.method480(var39, Opcodes.field133);// 268
+                  var3.method480(var39, Opcodes.field75);// 497
+                  var49 = var3.method480(var39, Opcodes.field26);// 66
                   var73 = var9;
                } else if (var63 == 2) {// 536
-                  var56 = var3.method480(var39, Class119.field133);// 307
-                  var3.method480(var39, Class119.field129);// 218
-                  var49 = var3.method480(var39, Class119.field116);// 109
+                  var56 = var3.method480(var39, Opcodes.field133);// 307
+                  var3.method480(var39, Opcodes.field129);// 218
+                  var49 = var3.method480(var39, Opcodes.field116);// 109
                   var73 = var9;
                } else if (var63 == 3) {// 213
-                  var56 = var3.method480(var39, Class119.field112);// 15
-                  var3.method480(var39, Class119.field26);// 385
-                  var49 = var3.method480(var39, Class119.field129);// 471
+                  var56 = var3.method480(var39, Opcodes.field112);// 15
+                  var3.method480(var39, Opcodes.field26);// 385
+                  var49 = var3.method480(var39, Opcodes.field129);// 471
                   var73 = var9;
                } else if (var63 != 4 && var63 != 5) {// 270
-                  var56 = var3.method480(var39, Class119.field112);// 235
-                  var3.method480(var39, Class119.field116);// 280
-                  var49 = var3.method480(var39, Class119.field92);// 370
+                  var56 = var3.method480(var39, Opcodes.field112);// 235
+                  var3.method480(var39, Opcodes.field116);// 280
+                  var49 = var3.method480(var39, Opcodes.field92);// 370
                   var73 = var9;// 95
                } else {
-                  var56 = var3.method480(var39, Class119.field104);// 582
-                  var49 = var3.method480(var39, Class119.field52);// 177
+                  var56 = var3.method480(var39, Opcodes.field104);// 582
+                  var49 = var3.method480(var39, Opcodes.field52);// 177
                   var73 = var9;
                }
 
@@ -3174,7 +3174,7 @@ public class Class415 implements Class412 {
                var10000 = var41;// 221
                var48++;
             }
-         } else if (var39.method18() == Class119.field129) {// 444
+         } else if (var39.method18() == Opcodes.field129) {// 444
             if (var7 >= var5) {// 601
                var10000 = var39;
             } else {
@@ -3183,18 +3183,18 @@ public class Class415 implements Class412 {
                int var64;
                Class415 var76;
                if ((var64 = Class337.method549(3)) == 0) {// 251 486
-                  var57 = var3.method480(var39, Class119.field133);// 117
-                  var3.method480(var39, Class119.field75);// 300
-                  var50 = var3.method480(var39, Class119.field116);// 245
+                  var57 = var3.method480(var39, Opcodes.field133);// 117
+                  var3.method480(var39, Opcodes.field75);// 300
+                  var50 = var3.method480(var39, Opcodes.field116);// 245
                   var76 = var9;
                } else if (var64 == 1) {// 296
-                  var57 = var3.method480(var39, Class119.field104);// 404
+                  var57 = var3.method480(var39, Opcodes.field104);// 404
                   var50 = var3.method448(var39, new Class116(var1.method46(), -2));// 417
                   var76 = var9;
                } else {
-                  var57 = var3.method480(var39, Class119.field112);// 401
-                  var3.method480(var39, Class119.field26);// 394
-                  var50 = var3.method480(var39, Class119.field75);// 556
+                  var57 = var3.method480(var39, Opcodes.field112);// 401
+                  var3.method480(var39, Opcodes.field26);// 394
+                  var50 = var3.method480(var39, Opcodes.field75);// 556
                   var76 = var9;// 207
                }
 
@@ -3238,11 +3238,11 @@ public class Class415 implements Class412 {
                var10000 = var42;// 576
                var7++;
             }
-         } else if (var39.method18() == Class119.field26) {// 103
+         } else if (var39.method18() == Opcodes.field26) {// 103
             if (var7 >= var5) {// 548
                var10000 = var39;
             } else {
-               Class246 var58 = var3.method480(var39, Class119.field104);// 162
+               Class246 var58 = var3.method480(var39, Opcodes.field104);// 162
                Class246 var51 = var3.method448(var39, new Class116(var1.method46(), -3));// 282
                var9.method833(var39, var51);// 339
 
@@ -3284,11 +3284,11 @@ public class Class415 implements Class412 {
                var10000 = var43;// 502
                var7++;
             }
-         } else if (var39.method18() == Class119.field92) {// 188
+         } else if (var39.method18() == Opcodes.field92) {// 188
             if (var7 >= var5) {// 172
                var10000 = var39;
             } else {
-               Class246 var59 = var3.method480(var39, Class119.field104);// 438
+               Class246 var59 = var3.method480(var39, Opcodes.field104);// 438
                Class246 var52 = var3.method448(var39, new Class116(var1.method46(), -4));// 592
                var9.method833(var39, var52);// 181
 
@@ -3330,11 +3330,11 @@ public class Class415 implements Class412 {
                var10000 = var44;// 225
                var7++;
             }
-         } else if (var39.method18() == Class119.field116) {// 297
+         } else if (var39.method18() == Opcodes.field116) {// 297
             if (var7 >= var5) {// 426
                var10000 = var39;
             } else {
-               Class246 var60 = var3.method480(var39, Class119.field104);// 41
+               Class246 var60 = var3.method480(var39, Opcodes.field104);// 41
                Class246 var53 = var3.method448(var39, new Class116(var1.method46(), -5));// 551
                var9.method833(var39, var53);// 360
 
@@ -3376,12 +3376,12 @@ public class Class415 implements Class412 {
                var10000 = var45;// 133
                var7++;
             }
-         } else if (var39.method18() == Class119.field52) {// 65
+         } else if (var39.method18() == Opcodes.field52) {// 65
             if (var7 >= var5) {// 504
                var10000 = var39;
             } else {
-               Class246 var61 = var3.method480(var39, Class119.field133);// 114
-               var3.method480(var39, Class119.field129);// 460
+               Class246 var61 = var3.method480(var39, Opcodes.field133);// 114
+               var3.method480(var39, Opcodes.field129);// 460
                Class246 var54 = var3.method448(var39, new Class116(var1.method46(), -4));// 102
                var9.method833(var39, var54);// 183
 
@@ -3446,7 +3446,7 @@ public class Class415 implements Class412 {
                      if ((var65 & var14) != var13) {// 363
                         var10000 = var39;
                      } else {
-                        Class246 var68 = var3.method480(var39, Class119.field89);// 35
+                        Class246 var68 = var3.method480(var39, Opcodes.field89);// 35
                         var3.method448(var39, new Class116(var1.method46(), var65));// 233
                         Class246 var67 = var3.method448(var39, new Class116(var1.method46(), var14));// 271
                         var9.method833(var39, var67);// 256
@@ -3771,9 +3771,9 @@ public class Class415 implements Class412 {
                   if (var10000.method18().method11(var5) == 1) {
                      if (var7 == 2) {// 1455
                         var10000 = var21;
-                        var3.method480(var19, Class119.field82);// 1674
+                        var3.method480(var19, Opcodes.dup_x2);// 1674
                      } else {
-                        var3.method480(var19, Class119.field118);// 1382
+                        var3.method480(var19, Opcodes.dup_x1);// 1382
                         var10000 = var21;
                      }
                   } else {
@@ -3781,11 +3781,11 @@ public class Class415 implements Class412 {
                         if (var19.method18().method11(var5) == 2) {// 1637
                            if (var7 == 2) {// 1376
                               var10000 = var21;
-                              var3.method480(var19, Class119.field136);// 1246
+                              var3.method480(var19, Opcodes.field136);// 1246
                               break label176;
                            }
 
-                           var3.method480(var19, Class119.field121);// 1395
+                           var3.method480(var19, Opcodes.field121);// 1395
                         }
 
                         var10000 = var21;// 1645

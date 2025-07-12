@@ -64,7 +64,7 @@ public class Class429 implements Class418 {
                      if (!field1270 && var2.method18() instanceof Class262) {// 6
                         Class262 var17 = (Class262)var2.method18();// 144
                         if (field1271.equals(var17.method518(var15.method46()))) {// 461
-                           Class528.method1558("javac Java compiler should be run with -XDstringConcat=inline flag to encrypt all strings.");// 358
+                           Logger.warning("javac Java compiler should be run with -XDstringConcat=inline flag to encrypt all strings.");// 358
                            field1270 = true;// 192
                         }
                      } else if (var2.method18() instanceof ldc) {// 272
@@ -160,43 +160,43 @@ public class Class429 implements Class418 {
       Class203 var5 = new Class203(9, Class138.field593, new Class138[]{Class138.field593}, new String[]{"arg0"}, field1277, var1.method93(), var10, var6);// 433
       var10.method451(Class120.method77(Class138.field583, 0));// 337
       var10.method484(new Class116(var6, 1));// 168
-      var10.method451(Class119.field113);// 133
-      var10.method451(Class119.field82);// 504
+      var10.method451(Opcodes.dup);// 133
+      var10.method451(Opcodes.dup_x2);// 504
       String var3 = "java.lang.RuntimeException";// 544
       var10.method451(var4.method58(var3));// 114
-      var10.method451(Class119.field113);// 102
+      var10.method451(Opcodes.dup);// 102
       var10.method451(var4.method47(var3, "<init>", Class138.field586, Class138.field582, (short)183));// 183
       var10.method451(var4.method47(var3, "getStackTrace", new Class145(new Class144("java.lang.StackTraceElement"), 1), Class138.field582, (short)182));// 64
-      var10.method451(Class119.field109);// 249
-      var10.method451(Class119.field46);// 196
+      var10.method451(Opcodes.swap);// 249
+      var10.method451(Opcodes.aaload);// 196
       var10.method451(var4.method58("java.lang.StringBuffer"));// 554
-      var10.method451(Class119.field113);// 89
+      var10.method451(Opcodes.dup);// 89
       var10.method451(var4.method47("java.lang.StringBuffer", "<init>", Class138.field586, Class138.field582, (short)183));// 599
-      var10.method451(Class119.field109);// 88
-      var10.method451(Class119.field113);// 8
+      var10.method451(Opcodes.swap);// 88
+      var10.method451(Opcodes.dup);// 8
       var10.method451(var4.method47("java.lang.StackTraceElement", "getClassName", Class138.field593, Class138.field582, (short)182));// 384
-      var10.method451(Class119.field109);// 301
+      var10.method451(Opcodes.swap);// 301
       var10.method451(var4.method47("java.lang.StackTraceElement", "getMethodName", Class138.field593, Class138.field582, (short)182));// 363
-      var10.method451(Class119.field82);// 35
-      var10.method451(Class119.field40);// 271
+      var10.method451(Opcodes.dup_x2);// 35
+      var10.method451(Opcodes.pop);// 271
       var10.method451(var4.method47("java.lang.StringBuffer", "append", Class138.field587, new Class138[]{Class138.field593}, (short)182));// 357
-      var10.method451(Class119.field109);// 182
+      var10.method451(Opcodes.swap);// 182
       var10.method451(var4.method47("java.lang.StringBuffer", "append", Class138.field587, new Class138[]{Class138.field593}, (short)182));// 122
       var10.method451(var4.method47("java.lang.StringBuffer", "toString", Class138.field593, Class138.field582, (short)182));// 346
-      var10.method451(Class119.field118);// 334
+      var10.method451(Opcodes.dup_x1);// 334
       var10.method451(var4.method47("java.lang.String", "length", Class138.field591, Class138.field582, (short)182));// 453
-      var10.method451(Class119.field109);// 224
-      var10.method451(Class119.field105);// 560
-      var10.method451(Class119.field118);// 71
+      var10.method451(Opcodes.swap);// 224
+      var10.method451(Opcodes.isub);// 560
+      var10.method451(Opcodes.dup_x1);// 71
       var10.method451(Class120.method75(Class138.field591, 3));// 191
       var10.method451(Class120.method75(Class138.field583, 2));// 441
       var10.method451(Class120.method75(Class138.field591, 4));// 575
       var10.method451(var4.method47("java.lang.String", "length", Class138.field591, Class138.field582, (short)182));// 407
-      var10.method451(Class119.field113);// 85
+      var10.method451(Opcodes.dup);// 85
       var10.method451(var4.method67(Class138.field585, (short)1));// 121
       var10.method451(Class120.method75(Class138.field583, 5));// 518
-      Iterator var11 = Class482.method1274(field1276).iterator();// 387
-      Iterator var10000 = var11;
+      Iterator<Class10> var11 = Class482.method1274(field1276).iterator();// 387
+      Iterator<Class10> var10000 = var11;
 
       while (var10000.hasNext()) {
          Class10 var7 = (Class10)var11.next();
@@ -205,37 +205,37 @@ public class Class429 implements Class418 {
       }
 
       var10.method451(Class120.method75(Class138.field591, 6));// 261
-      var10.method451(Class119.field109);// 206
-      var10.method451(Class119.field105);// 156
+      var10.method451(Opcodes.swap);// 206
+      var10.method451(Opcodes.isub);// 156
       var10.method451(Class120.method75(Class138.field591, 7));// 543
       Class90 var12 = Class120.method73((short)167, null);// 276
       var10.method439(var12);// 414
       Class246 var14 = var10.method484(new Class116(var6, 63));// 12
-      var10.method451(Class119.field82);// 139
-      var10.method451(Class119.field40);// 559
-      var10.method451(Class119.field118);// 187
-      var10.method451(Class119.field40);// 254
+      var10.method451(Opcodes.dup_x2);// 139
+      var10.method451(Opcodes.pop);// 559
+      var10.method451(Opcodes.dup_x1);// 187
+      var10.method451(Opcodes.pop);// 254
       var10.method451(Class120.method77(Class138.field591, 6));// 539
-      var10.method451(Class119.field82);// 120
-      var10.method451(Class119.field40);// 479
+      var10.method451(Opcodes.dup_x2);// 120
+      var10.method451(Opcodes.pop);// 479
       var10.method451(Class120.method77(Class138.field583, 2));// 298
       var10.method451(Class120.method77(Class138.field591, 4));// 439
       var10.method451(var4.method47("java.lang.String", "charAt", Class138.field585, new Class138[]{Class138.field591}, (short)182));// 106
-      var10.method451(Class119.field118);// 445
+      var10.method451(Opcodes.dup_x1);// 445
       var10.method451(Class120.method77(Class138.field591, 7));// 327
-      var10.method451(Class119.field118);// 383
+      var10.method451(Opcodes.dup_x1);// 383
       var10.method451(Class120.method77(Class138.field583, 0));// 140
-      var10.method451(Class119.field109);// 49
+      var10.method451(Opcodes.swap);// 49
       var10.method451(var4.method47("java.lang.String", "charAt", Class138.field585, new Class138[]{Class138.field591}, (short)182));// 173
       var10.method451(Class120.method77(Class138.field591, 6));// 101
-      var10.method451(Class119.field112);// 562
-      var10.method451(Class119.field112);// 244
-      var10.method451(Class119.field27);// 259
-      var10.method451(Class119.field90);// 194
-      var10.method451(Class119.field112);// 163
-      var10.method451(Class119.field112);// 243
-      var10.method451(Class119.field89);// 229
-      var10.method451(Class119.field27);// 590
+      var10.method451(Opcodes.field112);// 562
+      var10.method451(Opcodes.field112);// 244
+      var10.method451(Opcodes.field27);// 259
+      var10.method451(Opcodes.castore);// 194
+      var10.method451(Opcodes.field112);// 163
+      var10.method451(Opcodes.field112);// 243
+      var10.method451(Opcodes.field89);// 229
+      var10.method451(Opcodes.field27);// 590
       var10.method451(Class120.method75(Class138.field591, 6));// 309
       var10.method451(new Class286(4, -1));// 442
       var10.method451(Class120.method77(Class138.field591, 4));// 344
@@ -246,15 +246,15 @@ public class Class429 implements Class418 {
       Class246 var8 = var10.method451(new Class286(7, -1));// 481
       Class246 var9 = var10.method451(Class120.method77(Class138.field583, 5));// 75
       var10.method451(Class120.method77(Class138.field591, 7));// 111
-      var10.method451(Class119.field113);// 304
+      var10.method451(Opcodes.dup);// 304
       Class90 var15 = Class120.method73((short)156, var14);// 477
       var10.method439(var15);// 53
-      var10.method451(Class119.field107);// 584
+      var10.method451(Opcodes.pop2);// 584
       var10.method451(var4.method58("java.lang.String"));// 267
       var10.method451(Class120.method77(Class138.field583, 5));// 419
-      var10.method451(Class119.field109);// 402
-      var10.method451(Class119.field118);// 112
-      var10.method451(Class119.field109);// 43
+      var10.method451(Opcodes.swap);// 402
+      var10.method451(Opcodes.dup_x1);// 112
+      var10.method451(Opcodes.swap);// 43
       var10.method451(var4.method47("java.lang.String", "<init>", Class138.field586, new Class138[]{new Class145(Class138.field585, 1)}, (short)183));// 293
       var10.method451(Class120.method55(Class138.field583));// 322
       var12.method29(var9);// 74
@@ -267,8 +267,8 @@ public class Class429 implements Class418 {
 
    // $VF: synthetic method
    public Class429(Class338 var1) {
-      Class429 var3 = this;
       super();
+      Class429 var3 = this;
       this.field1272 = false;// 204
       this.field1279 = new TreeSet();// 239
       this.field1274 = var1;// 93 151
@@ -328,13 +328,13 @@ public class Class429 implements Class418 {
       Class251 var9 = new Class251();// 423
       Class203 var5 = new Class203(9, Class138.field593, new Class138[]{Class138.field593}, new String[]{"s"}, field1275, var1.method93(), var9, var3);// 61
       var9.method451(var4.method58("java.lang.String"));// 593
-      var9.method451(Class119.field113);// 336
+      var9.method451(Opcodes.dup);// 336
       var9.method451(Class120.method77(Class138.field583, 0));// 216
       var9.method451(var4.method47("java.lang.String", "length", Class138.field591, Class138.field582, (short)182));// 299
       var9.method451(var4.method67(Class138.field585, (short)1));// 314
       var9.method484(new Class116(var3, 1));// 50
-      var9.method451(Class119.field113);// 253
-      var9.method451(Class119.field107);// 135
+      var9.method451(Opcodes.dup);// 253
+      var9.method451(Opcodes.pop2);// 135
       Iterator var6 = Class482.method1274(field1276).iterator();// 166
       Iterator var10000 = var6;
 
@@ -344,12 +344,12 @@ public class Class429 implements Class418 {
          var9.method451(var7);
       }
 
-      var9.method451(Class119.field109);// 292
-      var9.method451(Class119.field113);// 373
-      var9.method451(Class119.field126);// 72
+      var9.method451(Opcodes.swap);// 292
+      var9.method451(Opcodes.dup);// 373
+      var9.method451(Opcodes.field126);// 72
       var9.method484(new Class116(var3, 1));// 268
-      var9.method451(Class119.field105);// 497
-      var9.method451(Class119.field82);// 66
+      var9.method451(Opcodes.isub);// 497
+      var9.method451(Opcodes.dup_x2);// 66
       var9.method451(Class120.method75(Class138.field591, 3));// 536
       var9.method451(Class120.method75(Class138.field583, 1));// 307
       var9.method451(Class120.method75(Class138.field591, 2));// 218
@@ -361,18 +361,18 @@ public class Class429 implements Class418 {
       var9.method451(Class120.method77(Class138.field591, 3));// 370
       var9.method451(var4.method47("java.lang.String", "charAt", Class138.field585, new Class138[]{Class138.field591}, (short)182));// 516
       var9.method451(Class120.method77(Class138.field591, 2));// 95
-      var9.method451(Class119.field112);// 227
-      var9.method451(Class119.field27);// 55
-      var9.method451(Class119.field109);// 288
-      var9.method451(Class119.field118);// 129
+      var9.method451(Opcodes.field112);// 227
+      var9.method451(Opcodes.field27);// 55
+      var9.method451(Opcodes.swap);// 288
+      var9.method451(Opcodes.dup_x1);// 129
       var9.method451(Class120.method77(Class138.field591, 2));// 258
-      var9.method451(Class119.field112);// 437
-      var9.method451(Class119.field27);// 110
+      var9.method451(Opcodes.field112);// 437
+      var9.method451(Opcodes.field27);// 110
       var9.method484(new Class116(var3, 63));// 221
-      var9.method451(Class119.field89);// 444
-      var9.method451(Class119.field27);// 601
+      var9.method451(Opcodes.field89);// 444
+      var9.method451(Opcodes.field27);// 601
       var9.method451(Class120.method75(Class138.field591, 2));// 193
-      var9.method451(Class119.field90);// 486
+      var9.method451(Opcodes.castore);// 486
       var9.method451(new Class286(3, -1));// 117
       var9.method451(Class120.method77(Class138.field591, 3));// 300
       Class90 var8 = Class120.method73((short)155, null);// 404
@@ -383,18 +383,18 @@ public class Class429 implements Class418 {
       var9.method451(Class120.method77(Class138.field591, 3));// 556
       var9.method451(var4.method47("java.lang.String", "charAt", Class138.field585, new Class138[]{Class138.field591}, (short)182));// 316
       var9.method451(Class120.method77(Class138.field591, 2));// 207
-      var9.method451(Class119.field112);// 275
-      var9.method451(Class119.field27);// 127
-      var9.method451(Class119.field109);// 496
-      var9.method451(Class119.field118);// 369
+      var9.method451(Opcodes.field112);// 275
+      var9.method451(Opcodes.field27);// 127
+      var9.method451(Opcodes.swap);// 496
+      var9.method451(Opcodes.dup_x1);// 369
       var9.method451(Class120.method77(Class138.field591, 2));// 215
-      var9.method451(Class119.field112);// 382
-      var9.method451(Class119.field27);// 210
+      var9.method451(Opcodes.field112);// 382
+      var9.method451(Opcodes.field27);// 210
       var9.method484(new Class116(var3, 63));// 576
-      var9.method451(Class119.field89);// 103
-      var9.method451(Class119.field27);// 548
+      var9.method451(Opcodes.field89);// 103
+      var9.method451(Opcodes.field27);// 548
       var9.method451(Class120.method75(Class138.field591, 2));// 545
-      var9.method451(Class119.field90);// 523
+      var9.method451(Opcodes.castore);// 523
       var9.method451(new Class286(3, -1));// 162
       var9.method451(Class120.method77(Class138.field591, 3));// 282
       var9.method439(Class120.method73((short)167, var12));// 503
@@ -447,8 +447,7 @@ public class Class429 implements Class418 {
       int var4;
       for (int var10000 = var4 = var2.length - 1; var10000 >= 0; var10000 = var4) {// 456
          var2[var4] = (char)(var1.charAt(var4) ^ var5);// 367
-         char var6;
-         char var7 = var6 = (char)(var5 ^ var4);// 82
+	      char var7 = (char)(var5 ^ var4);// 82
          var4--;
          var5 = (char)(var7 & '?');// 83
       }

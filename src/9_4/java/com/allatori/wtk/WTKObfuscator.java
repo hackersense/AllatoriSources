@@ -5,7 +5,7 @@ import com.sun.kvem.environment.Obfuscator;
 import java.io.File;
 import java.io.IOException;
 import java.util.StringTokenizer;
-import mapped.Class528;
+import mapped.Logger;
 import mapped.Class550;
 import mapped.Class580;
 
@@ -26,7 +26,7 @@ public class WTKObfuscator implements Obfuscator {
       File var13;
       File var10000;
       if ((var13 = new File(var12)).exists() && !var13.canWrite()) {// 20 204
-         Class528.method1557("Using the existing configuration file.");// 239
+         Logger.info("Using the existing configuration file.");// 239
          var10000 = var13;
       } else {
          String var9 = this.method2096(var1, var2, var3, var4, var5, var6, var7);// 498

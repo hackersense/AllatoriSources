@@ -19,7 +19,7 @@ public class Class372 implements Class360 {
          var10000 = var4 = '0' + var4;
       }
 
-      StringBuffer var2 = new StringBuffer(var4.length());// 260
+      StringBuilder var2 = new StringBuilder(var4.length());// 260
 
       int var3;
       for (int var5 = var3 = 0; var5 < var4.length(); var5 = ++var3) {// 30

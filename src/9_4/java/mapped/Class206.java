@@ -457,9 +457,9 @@ public class Class206 extends Class196 implements Cloneable {
    // $VF: synthetic method
    public void method85(int var1) {
       Class251 var3;
-      (var3 = new Class251()).method451(Class119.field101);// 274 558
+      (var3 = new Class251()).method451(Opcodes.field101);// 274 558
       var3.method451(new Class289(this.field769.method408(this.field756, "<init>", "()V")));// 501
-      var3.method451(Class119.field66);// 337
+      var3.method451(Opcodes.field66);// 337
       Class203 var4 = new Class203(var1, Class138.field586, Class138.field582, null, "<init>", this.field764, var3, this.field769);// 208
       var4.method89(1);
       this.method365(var4.method315());// 133

@@ -14,7 +14,7 @@ import java.io.StringReader;
 import java.io.StringWriter;
 import mapped.Class516;
 import mapped.Class522;
-import mapped.Class528;
+import mapped.Logger;
 import mapped.Class555;
 import mapped.Class600;
 
@@ -39,12 +39,12 @@ public class StackTrace2 {
             try {
                var1 = Class516.method1464(new InputStreamReader(new FileInputStream(var10), "UTF-8"));// 30
             } catch (FileNotFoundException var7) {// 143
-               Class528.method1559("Log file not found: " + var7.getMessage());// 252
+               Logger.error("Log file not found: " + var7.getMessage());// 252
                System.exit(0);// 20
                var10000 = var2;
                break label43;// 498
             } catch (Exception var8) {// 204
-               Class528.method1559("Error reading log file: " + var8.getMessage());// 239
+               Logger.error("Error reading log file: " + var8.getMessage());// 239
                System.exit(0);// 310
                var10000 = var2;// 409
                break label43;
@@ -60,7 +60,7 @@ public class StackTrace2 {
          try {
             var3 = new BufferedReader(new FileReader(var11));// 93
          } catch (FileNotFoundException var5) {// 151
-            Class528.method1559("Input file not found: " + var5.getMessage());// 530
+            Logger.error("Input file not found: " + var5.getMessage());// 530
             System.exit(0);// 491
          }
 
@@ -70,7 +70,7 @@ public class StackTrace2 {
             try {
                var12 = new PrintWriter(new BufferedWriter(new FileWriter(var4)));// 273
             } catch (IOException var6) {// 161
-               Class528.method1559("Error writing output file: " + var6.getMessage());// 141
+               Logger.error("Error writing output file: " + var6.getMessage());// 141
                System.exit(0);// 580
                var13 = var3;// 123
                break label38;

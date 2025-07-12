@@ -1447,7 +1447,7 @@ public class Class445 extends DefaultHandler {
                               Date var9 = var34.getTime();// 41
                               Class580.method1926().method1649(var9);// 551
                               SimpleDateFormat var17 = new SimpleDateFormat("MMMMM dd, yyyy");// 91
-                              Class528.method1557("Expiry date set to " + var17.format(var9));// 360
+                              Logger.info("Expiry date set to " + var17.format(var9));// 360
                            } catch (Exception var12) {// 312
                               throw new Class244(this.field1330, "Date format is yyyy-mm-dd. " + this.method905());
                            }

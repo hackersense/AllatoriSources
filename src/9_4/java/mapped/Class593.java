@@ -414,8 +414,8 @@ public class Class593 {
             var8.method457(var11, new sipush(var2[++var5]));// 292
             var8.method457(var11, new sipush(var2[++var5]));// 373
             var5++;
-            var8.method457(var11, Class119.field107);// 72
-            var8.method457(var11, Class119.field107);// 268
+            var8.method457(var11, Opcodes.pop2);// 72
+            var8.method457(var11, Opcodes.pop2);// 268
             var10++;
             var11 = var8.method32();// 497
          } while (var10 < var4 && var6 < var9 - var5 / 4);// 109
@@ -449,7 +449,7 @@ public class Class593 {
                   break;
                }
             } catch (ClassCastException var7) {// 132
-               Class528.method1559("ALLATORI INTERNAL ERROR. Class " + var8.method93());// 184
+               Logger.error("ALLATORI INTERNAL ERROR. Class " + var8.method93());// 184
                var10000 = var2;
                continue;// 534
             }

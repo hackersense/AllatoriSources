@@ -279,7 +279,7 @@ public class Class340 {
                && (var8 = Class504.method1353(Class490.method1313(this.field957)).method1341(var6)) != null// 32 238
                && !var8.equals(var6)) {
                if (field961.method1341(var8) == null) {// 423
-                  Class528.method1558("Package '" + var8 + "' should be un-renamed.");// 61
+                  Logger.warning("Package '" + var8 + "' should be un-renamed.");// 61
                }
 
                field961.method1340(var8, var6);// 525
@@ -294,7 +294,7 @@ public class Class340 {
                   && (var8 = Class504.method1353(Class490.method1313(var2.field957)).method1341(var6)) != null// 216 299
                   && !var8.equals(var6)) {
                   if (field961.method1341(var8) == null) {// 314
-                     Class528.method1558("Package '" + var8 + "' should be un-renamed.");// 137
+                     Logger.warning("Package '" + var8 + "' should be un-renamed.");// 137
                   }
 
                   field961.method1340(var8, var6);// 50

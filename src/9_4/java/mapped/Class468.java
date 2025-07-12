@@ -27,7 +27,7 @@ public class Class468 extends Class469 {
    // $VF: synthetic method
    public boolean method1053(Class10 var1) {
       short var2 = var1.method22();// 232
-      if (Class119.field54[var2] != null && !(var1 instanceof Class18) && !(var1 instanceof Class12)) {// 463
+      if (Opcodes.field54[var2] != null && !(var1 instanceof Class18) && !(var1 instanceof Class12)) {// 463
          this.field1530.println("il.append(InstructionConstants." + var1.method20().toUpperCase(Locale.ENGLISH) + ");");// 424
          return true;// 588
       } else {
